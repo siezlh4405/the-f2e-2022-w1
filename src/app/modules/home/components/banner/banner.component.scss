@@ -1,10 +1,13 @@
 @import '../../../../../assets/styles/variable';
 
 .banner {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 6.5rem 3rem 0 3rem;
+  height: calc(93.7rem - #{$header-height});
+  padding: 6.5rem 3rem 0 3rem;
+  background-color: $color-banner;
 
   &__h1 {
     color: $color-white;
@@ -14,12 +17,14 @@
     font-weight: 900;
 
     &_big {
+      margin-bottom: 1.5rem;
       font-size: 7rem;
       text-transform: uppercase;
     }
   }
 
   &__title {
+    margin-bottom: 1.5rem;
     font-size: 5.2rem;
     color: $color-gray-dark1;
     font-weight: 900;
@@ -29,4 +34,103 @@
       font-weight: 500;
     }
   }
+
+  &__mark-title {
+    font-size: 5.2rem;
+    color: $color-black;
+    text-transform: uppercase;
+
+    &_web {
+      position: absolute;
+      top: 5rem;
+      right: 3rem;
+      z-index: 100;
+    }
+
+    &_front {
+      position: absolute;
+      bottom: 27rem;
+      left: 12rem;
+    }
+  }
+
+  &__news-ticker-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  &__ctn {
+    &,
+    &:link,
+    &:visited {
+        position: absolute;
+        bottom: 30.8rem;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border: 2px solid $color-black;
+        border-radius: 2px;
+        background-color: $color-white;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+  }
+
+  &__ctn-text {
+    height: 2rem;
+    margin-right: .5rem;
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  &__ctn-img {
+    width: 2rem;
+    height: 1.2rem;
+  }
+
+  &__star {
+    width: 19.5rem;
+
+    &_web {
+      position: absolute;
+      top: 3rem;
+      right: 21.6rem;
+    }
+
+    &_front {
+      position: absolute;
+      top: 26.6rem;
+      left: 10rem;
+      transform: rotate(-35deg);
+    }
+  }
+}
+
+.news-ticker {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &__text {
+    margin-right: 3rem;
+    font-size: 8rem;
+    font-weight: 900;
+    color: $color-white;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+
+    &:not(last-child) {
+      margin-right: 3rem;
+    }
+
+    &_move {
+      animation: ticker-text-move 5s linear infinite;
+    }
+  }
+}
+
+@keyframes ticker-text-move {
+  from { transform: translateX(0%) }
+  to { transform: translateX(calc(-100% - 3rem)) }
 }
