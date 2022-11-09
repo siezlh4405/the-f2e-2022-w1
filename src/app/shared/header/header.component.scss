@@ -38,6 +38,11 @@
       border-radius: 3px;
       color: $color-white;
       background-color: $color-green1;
+
+      &:hover {
+        color: $color-green1;
+        background-color: $color-white;
+      }
     }
   }
 }
