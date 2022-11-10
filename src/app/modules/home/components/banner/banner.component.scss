@@ -98,11 +98,10 @@
     &:link,
     &:visited {
         display: flex;
-        position: absolute;
-        left: 87.6rem;
-        bottom: 23.8rem;
+        position: relative;
         display: flex;
         align-items: center;
+        margin-top: 25rem;
         padding: 1rem;
         border: 2px solid transparent;
         border-radius: 2px;
@@ -128,8 +127,6 @@
     }
 
     &:hover {
-      bottom: 25rem;
-      left: 86.4rem;
       border: 2px solid $color-black;
 
       &::after {
