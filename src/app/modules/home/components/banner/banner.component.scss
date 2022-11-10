@@ -7,7 +7,7 @@
   align-items: center;
   height: calc(93.7rem - #{$header-height});
   padding: 6.5rem 3rem 0 3rem;
-  background-color: $color-banner;
+  background-color: $color-orangle3;
   overflow: hidden;
   z-index: 0;
 
@@ -42,7 +42,7 @@
   }
 
   &__h1-box:hover > &__h1:first-child {
-    color: $color-banner;
+    color: $color-orangle3;
   }
 
   &__title {
