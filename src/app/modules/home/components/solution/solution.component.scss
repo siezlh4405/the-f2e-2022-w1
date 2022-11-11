@@ -1,0 +1,113 @@
+@import '../../../../../assets/styles/variable';
+
+.solution {
+  position: relative;
+  width: 100%;
+  height: 208.3rem;
+  background: $color-green3;
+  overflow: hidden;
+
+  &__header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__sub-content {
+    position: absolute;
+    top: 90.9rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 149.1rem;
+    height: 149.1rem;
+    border-radius: 50%;
+    background-color: $color-orange1;
+    z-index: 300;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: absolute;
+  top: 10.9rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 179rem;
+  height: 179rem;
+  border-radius: 50%;
+  background-color: $color-orange3;
+  z-index: 200;
+
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 23.6rem;
+    font-size: 8rem;
+    font-family: 'GenSenRoundedH', sans-serif;
+    letter-spacing: 1.5rem;
+    color: $color-gray-dark2;
+  }
+
+  &__background {
+    width: 91.1rem;
+
+    &:nth-child(2) {
+      margin-top: -5rem;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+  }
+}
+
+// 之後和 banner共用
+.news-ticker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  z-index: 100;
+
+  &__text {
+    margin-right: 3rem;
+    font-size: 8rem;
+    font-family: 'GenSenRoundedH', sans-serif;
+    color: $color-white;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+
+    &:not(last-child) {
+      margin-right: 3rem;
+    }
+
+    &_green {
+      color: $color-green3;
+      text-shadow: 1px 0 $color-white, 1px 1px $color-white, 1px -1px $color-white,
+        0 1px $color-white, 0 -1px $color-white, -1px 0 $color-white, -1px 1px $color-white;
+    }
+
+    &_move {
+      animation: ticker-text-move 5s linear infinite;
+    }
+  }
+}
+
+@keyframes ticker-text-move {
+  from { transform: translateX(0%) }
+  to { transform: translateX(calc(-200% - 6rem)) }
+}
