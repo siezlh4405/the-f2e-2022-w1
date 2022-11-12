@@ -1,0 +1,38 @@
+@import './variable';
+@import './mixin';
+
+// 跑馬燈區塊
+//THEF2E
+.news-ticker-thef2e {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  z-index: 100;
+
+  &__text {
+    margin-right: 3rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    @include white-bold-text(8rem);
+
+    &:not(last-child) {
+      margin-right: 3rem;
+    }
+
+    &_green {
+      color: $color-green3;
+      text-shadow: 1px 0 $color-white, 1px 1px $color-white, 1px -1px $color-white,
+        0 1px $color-white, 0 -1px $color-white, -1px 0 $color-white, -1px 1px $color-white;
+    }
+
+    &_move {
+      animation: ticker-text-move 5s linear infinite;
+    }
+  }
+}
+
+@keyframes ticker-text-move {
+  from { transform: translateX(0%) }
+  to { transform: translateX(calc(-200% - 6rem)) }
+}

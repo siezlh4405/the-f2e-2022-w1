@@ -1,4 +1,6 @@
 @import '../../../../../assets/styles/variable';
+@import '../../../../../assets/styles/mixin';
+@import '../../../../../assets/styles/components';
 
 .banner {
   position: relative;
@@ -87,7 +89,7 @@
     }
   }
 
-  &__news-ticker-box {
+  &__news-ticker-thef2e-box {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -231,32 +233,4 @@
       z-index: 30;
     }
   }
-}
-
-.news-ticker {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-
-  &__text {
-    margin-right: 3rem;
-    font-size: 8rem;
-    font-family: 'GenSenRoundedH', sans-serif;
-    color: $color-white;
-    letter-spacing: .3rem;
-    text-transform: uppercase;
-
-    &:not(last-child) {
-      margin-right: 3rem;
-    }
-
-    &_move {
-      animation: ticker-text-move 5s linear infinite;
-    }
-  }
-}
-
-@keyframes ticker-text-move {
-  from { transform: translateX(0%) }
-  to { transform: translateX(calc(-100% - 3rem)) }
 }

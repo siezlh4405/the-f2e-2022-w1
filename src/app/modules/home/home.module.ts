@@ -4,6 +4,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ProblemComponent } from './components/problem/problem.component';
 import { SolutionComponent } from './components/solution/solution.component';
+import { ActivityInfoComponent } from './components/activity-info/activity-info.component';
 
 
 
@@ -12,7 +13,8 @@ import { SolutionComponent } from './components/solution/solution.component';
     HomePageComponent,
     BannerComponent,
     ProblemComponent,
-    SolutionComponent
+    SolutionComponent,
+    ActivityInfoComponent
   ],
   imports: [
     CommonModule

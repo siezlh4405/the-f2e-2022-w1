@@ -1,0 +1,197 @@
+@import '../../../../../assets/styles/variable';
+@import '../../../../../assets/styles/mixin';
+
+.activity-info {
+  position: relative;
+  width: 100%;
+  height: 274.5rem;
+  background-color: $color-orange3;
+  overflow: hidden;
+
+  &__white-line {
+    z-index: 100;
+
+    &_1 {
+      position: absolute;
+      top: 23.1rem;
+      left: 4.4rem;
+    }
+
+    &_2 {
+      position: absolute;
+      top: 45.1rem;
+      left: 85.4rem;
+    }
+
+    &_3 {
+      position: absolute;
+      top: 119.5rem;
+      left: 109.7rem;
+    }
+
+    &_4 {
+      position: absolute;
+      top: 201.7rem;
+      left: 38.7rem;
+    }
+  }
+
+  &__star {
+    &_1 {
+      position: absolute;
+      top: 16.4rem;
+      left: 99.5rem;
+      transform: rotate(17deg);
+    }
+
+    &_2 {
+      position: absolute;
+      bottom: 9.4rem;
+      left: 7.9rem;
+      transform: rotate(25deg);
+    }
+  }
+
+  &__green-snow {
+    position: absolute;
+    bottom: 57.8rem;
+    right: 20rem;
+  }
+}
+
+.info-box {
+  position: relative;
+  width: 100%;
+  z-index: 150;
+
+  &_1 {
+    margin-top: 34.3rem;
+    margin-left: 53.7rem;
+  }
+
+  &_1 &__text {
+    margin-left: 18.1rem;
+  }
+
+  &_2 {
+    margin-top: 32.5rem;
+    margin-left: 101.4rem;
+  }
+
+  &_2 &__text {
+    margin-left: 13.1rem;
+  }
+
+  &_3 {
+    margin-top: 41.9rem;
+    margin-left: 102.9rem;
+  }
+
+  &_3 &__text {
+    margin-left: 9.1rem;
+  }
+
+  &_4 {
+    margin-top: 26.1rem;
+    margin-left: 61.2rem;
+  }
+
+  &_4 &__text {
+    margin-left: 20.1rem;
+  }
+
+  &__title {
+    height: 6rem;
+
+    @include white-bold-text(6rem);
+    color: $color-black;
+
+    &_sub {
+      margin-top: .5rem;
+      color: $color-green1;
+      text-transform: uppercase;
+      letter-spacing: .5rem;
+    }
+  }
+
+  &__text {
+    margin-top: 3.6rem;
+    font-size: 4.4rem;
+    font-weight: bold;
+  }
+}
+
+.green-face {
+  position: absolute;
+  top: 50%;
+  left: -75.4rem;
+  transform: translateY(-50%) rotate(0deg);
+  width: 180rem;
+  height: 180rem;
+  border-radius: 50%;
+  background-color: $color-green1;
+
+  &_bottom {
+    background-color: transparent;
+  }
+
+  &__eye {
+    display: block;
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+    background-color: $color-white;
+
+    &_1 {
+      position: absolute;
+      top: 48.6rem;
+      right: 61.4rem;
+    }
+
+    &_2 {
+      position: absolute;
+      top: 39rem;
+      right: 50rem;
+    }
+  }
+
+  &__mouth {
+    position: absolute;
+    top: 61.3rem;
+    right: 43.5rem;
+  }
+
+  &__text {
+    width: 8rem;
+    height: 8rem;
+    @include white-bold-text(8rem);
+
+    &_1 {
+      position: absolute;
+      top: 7.3rem;
+      right: 76.8rem;
+      transform: rotate(2.68deg);
+    }
+
+    &_2 {
+      position: absolute;
+      top: 8.9rem;
+      right: 67.4rem;
+      transform: rotate(14.46deg);
+    }
+
+    &_3 {
+      position: absolute;
+      top: 12.5rem;
+      right: 58.6rem;
+      transform: rotate(26.23deg);
+    }
+
+    &_4 {
+      position: absolute;
+      top: 16.9rem;
+      right: 50.9rem;
+      transform: rotate(38.01deg);
+    }
+  }
+}
