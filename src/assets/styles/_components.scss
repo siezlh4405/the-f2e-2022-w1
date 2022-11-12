@@ -14,6 +14,7 @@
     margin-right: 3rem;
     letter-spacing: .3rem;
     text-transform: uppercase;
+    white-space: nowrap;
     @include white-bold-text(8rem);
 
     &:not(last-child) {
@@ -27,12 +28,46 @@
     }
 
     &_move {
-      animation: ticker-text-move 5s linear infinite;
+      animation: f2e-ticker-text-move 5s linear infinite;
     }
   }
 }
 
-@keyframes ticker-text-move {
+@keyframes f2e-ticker-text-move {
+  from { transform: translateX(0%) }
+  to { transform: translateX(calc(-200% - 6rem)) }
+}
+
+// 區區修煉已經無法滿足了嗎？還有比賽等著你！
+.news-ticker-awards {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  z-index: 100;
+
+  &__text {
+    @include white-bold-text(12rem);
+    margin-right: 3rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    &:not(last-child) {
+      margin-right: 3rem;
+    }
+
+    &_green {
+      color: $color-green1;
+    }
+
+    &_move {
+      animation: awards-ticker-text-move 30s linear infinite;
+    }
+  }
+}
+
+@keyframes awards-ticker-text-move {
   from { transform: translateX(0%) }
   to { transform: translateX(calc(-200% - 6rem)) }
 }

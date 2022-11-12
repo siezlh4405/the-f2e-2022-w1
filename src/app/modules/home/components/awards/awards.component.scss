@@ -1,0 +1,93 @@
+@import '../../../../../assets/styles/variable';
+@import '../../../../../assets/styles/mixin';
+@import '../../../../../assets/styles/components';
+
+.awards {
+  width: 100%;
+  height: 188.3rem;
+  background-color: $color-orange3;
+  overflow: hidden;
+
+  &__ticker-box {
+    width: 100%;
+    height: 18.5rem;
+    padding-top: 5.5rem;
+  }
+
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 60rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+  }
+
+  &__circle {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: $color-white;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 44rem;
+
+
+    &_left {
+      background-image: linear-gradient(90deg, $color-green1 50%, transparent 50%);
+    }
+
+    &_right {
+      background-image: linear-gradient(90deg, transparent 50%, $color-green1 50%);
+    }
+  }
+}
+
+.text-box {
+  width: 104.5rem;
+  height: 100%;
+  border-radius: 10rem;
+  background-color: $color-white;
+
+  &__title {
+    @include white-bold-text(5.2rem);
+    width: 100%;
+    margin-top: -2.6rem;
+    text-align: center;
+    color: $color-green1;
+  }
+
+  &__li-box {
+    margin-top: 5rem;
+    padding: 5rem 6rem;
+    line-height: 5rem;
+    font-size: 4rem;
+    color: $color-black;
+    list-style-type: none;
+
+    &_ul {
+      list-style-type: decimal;
+      padding-left: 11rem;
+    }
+  }
+
+  &__sub-ul {
+    margin-left: 5rem;
+    list-style-type: disc;
+  }
+}

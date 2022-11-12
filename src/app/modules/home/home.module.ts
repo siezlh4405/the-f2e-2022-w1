@@ -6,6 +6,7 @@ import { ProblemComponent } from './components/problem/problem.component';
 import { SolutionComponent } from './components/solution/solution.component';
 import { ActivityInfoComponent } from './components/activity-info/activity-info.component';
 import { RaceInfoComponent } from './components/race-info/race-info.component';
+import { AwardsComponent } from './components/awards/awards.component';
 
 
 
@@ -16,7 +17,8 @@ import { RaceInfoComponent } from './components/race-info/race-info.component';
     ProblemComponent,
     SolutionComponent,
     ActivityInfoComponent,
-    RaceInfoComponent
+    RaceInfoComponent,
+    AwardsComponent
   ],
   imports: [
     CommonModule
