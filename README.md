@@ -8,8 +8,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-node 版本: 14.17.5
-Angular Cli版本: 12.2.1
+- node 版本: 14.17.5
+- Angular Cli版本: 12.2.1
 
 運行方法: `npm install -g @angular/cli` & `npm install` & `ng serve`
 
@@ -28,6 +28,7 @@ Angular Cli版本: 12.2.1
 - RXJS
 - Flex
 - Grid
+- TypeScript
 
 ## 第三方服務
 - 字型 (https://github.com/ButTaiwan/gensen-font)
