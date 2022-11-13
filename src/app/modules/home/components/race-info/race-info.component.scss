@@ -10,6 +10,7 @@
 }
 
 .week-box {
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -17,6 +18,24 @@
   margin-bottom: 6rem;
   border-top: 1px solid $color-black;
   border-bottom: 1px solid $color-black;
+
+  &__star {
+    width: 4.2rem;
+    height: 4.2rem;
+    fill: $color-black;
+
+    &_1 {
+      position: absolute;
+      left: 37.3rem;
+      top: -2.1rem;
+    }
+
+    &_2 {
+      position: absolute;
+      right: 37.3rem;
+      bottom: -2.1rem;
+    }
+  }
 }
 
 .text-box {
