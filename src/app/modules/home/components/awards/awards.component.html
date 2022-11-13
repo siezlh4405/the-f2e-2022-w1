@@ -5,10 +5,10 @@
     </div>
   </div>
   <div class="info-box">
-    <div class="info-box__header">
+    <div class="info-box__header" [class.u-hidden]="!isBox1Show">
       <i class="info-box__circle"></i>
     </div>
-    <div class="info-box__container info-box__container_left">
+    <div class="info-box__container info-box__container_left" [class.info-box__container_left-hidden]="!isBox1Show">
       <div class="text-box">
         <div class="text-box__title">評審機制</div>
         <ol class="text-box__li-box">
@@ -29,10 +29,10 @@
     </div>
   </div>
   <div class="info-box">
-    <div class="info-box__header">
+    <div class="info-box__header" [class.u-hidden]="!isBox2Show">
       <i class="info-box__circle"></i>
     </div>
-    <div class="info-box__container info-box__container_right">
+    <div class="info-box__container info-box__container_right" [class.info-box__container_right-hidden]="!isBox2Show">
       <div class="text-box">
         <div class="text-box__title">比賽獎項</div>
         <ul class="text-box__li-box text-box__li-box_ul">
@@ -45,10 +45,10 @@
     </div>
   </div>
   <div class="info-box">
-    <div class="info-box__header">
+    <div class="info-box__header" [class.u-hidden]="!isBox3Show">
       <i class="info-box__circle"></i>
     </div>
-    <div class="info-box__container info-box__container_sign">
+    <div class="info-box__container info-box__container_sign" [class.u-hidden]="!isBox3Show">
       <a href="#" class="info-box__btn">立即報名!</a>
     </div>
   </div>

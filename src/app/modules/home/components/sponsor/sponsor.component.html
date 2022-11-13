@@ -1,4 +1,4 @@
-<div class="sponsor" [class.sponsor_actice]="true">
+<div class="sponsor" [class.sponsor_actice]="isScrollBottom">
   <div class="sponsor__title-box">
     <div class="sponsor__star">
       <svg width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,14 +13,14 @@
     </div>
   </div>
   <div class="sponsor__container">
-    <div class="sponsor__item">
-      <img src="../../../../../assets/images/sponsor-1.png" alt="" srcset="">
+    <div class="sponsor__item" [class.sponsor__item_hidden1]="!isScrollBottom">
+      <img class="sponsor__img" src="../../../../../assets/images/sponsor-1.png" alt="" srcset="">
     </div>
-    <div class="sponsor__item">
-      <img src="../../../../../assets/images/sponsor-2.png" alt="" srcset="">
+    <div class="sponsor__item" [class.sponsor__item_hidden2]="!isScrollBottom">
+      <img class="sponsor__img" src="../../../../../assets/images/sponsor-2.png" alt="" srcset="">
     </div>
-    <div class="sponsor__item">
-      <img src="../../../../../assets/images/sponsor-3.png" alt="" srcset="">
+    <div class="sponsor__item" [class.sponsor__item_hidden3]="!isScrollBottom">
+      <img class="sponsor__img" src="../../../../../assets/images/sponsor-3.png" alt="" srcset="">
     </div>
   </div>
 </div>

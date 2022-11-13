@@ -5,6 +5,7 @@
   width: 100%;
   background-color: $color-orange3;
   overflow: hidden;
+  transition: all .5s;
 
   &_actice {
     background-color: $color-orange1;
@@ -42,7 +43,7 @@
     justify-content: space-between;
     width: 100%;
     height: 59rem;
-    padding: 0 21rem;
+    padding: 0 10.93%;
     margin-top: 14.6rem;
   }
 
@@ -50,10 +51,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40rem;
-    height: 40rem;
+    width: 26%;
+    padding: 5rem;
+    height: fit-content;
     border-radius: 5rem;
     background-color: $color-white;
+    transition: all .3s;
+
+    &_hidden1 {
+      transform: translateX(-300%);
+      visibility: hidden;
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    &_hidden2 {
+      transform: translateY(300%);
+      visibility: hidden;
+      pointer-events: none;
+      opacity: 0;
+    }
+
+    &_hidden3 {
+      transform: translateX(300%);
+      visibility: hidden;
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
+
+  &__img {
+    width: 100%;
   }
 }
-

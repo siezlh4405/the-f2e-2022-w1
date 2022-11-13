@@ -1,5 +1,5 @@
 @import '../../../../../assets/styles/variable';
-// @import '../../../../../assets/styles/mixin';
+@import '../../../../../assets/styles/utilities';
 
 .race-info {
   width: 100%;
@@ -43,7 +43,7 @@
   width: 213.1rem;
   transition: all 2s;
 
-  &_1-active {
+  &_0-active, &_1-active {
     transform: translate(calc(52.3rem - ((192rem - 100vw) / 2)));
   }
 
@@ -64,7 +64,7 @@
     transition: all .3s;
   }
 
-  &_1-active &__text_1 {
+  &_0-active &__text_1, &_1-active &__text_1 {
     color: $color-yellow1;
   }
 
@@ -84,6 +84,19 @@
   align-items: flex-start;
   width: 102rem;
   margin: 0 auto;
+  transition: all .5s;
+
+  &_1-disabled {
+    transform: translateY(45rem);
+  }
+
+  &_2-active {
+    transform: translateY(-45rem);
+  }
+
+  &_3-active {
+    transform: translateY(-90rem);
+  }
 
   &__title {
     width: 100%;
@@ -136,6 +149,7 @@
       border-radius: 2px;
       background-color: $color-white;
       font-size: 2rem;
+      color: $color-black;
       cursor: pointer;
       transition: all .3s;
   }

@@ -1,6 +1,7 @@
 @import '../../../../../assets/styles/variable';
 @import '../../../../../assets/styles/mixin';
 @import '../../../../../assets/styles/components';
+@import '../../../../../assets/styles/utilities';
 
 .solution {
   position: relative;
@@ -36,6 +37,7 @@
   border-radius: 50%;
   background-color: $color-orange3;
   z-index: 200;
+  transition: all .3s;
 
   &__title-box {
     display: flex;
@@ -48,6 +50,7 @@
     font-family: 'GenSenRoundedH', sans-serif;
     letter-spacing: 1.5rem;
     color: $color-gray-dark2;
+    transition: all .3s;
   }
 
   &__background {
@@ -81,6 +84,7 @@
   border-radius: 50%;
   background-color: $color-orange1;
   z-index: 300;
+  transition: all .3s;
 
   &__box {
     position: relative;
@@ -104,6 +108,7 @@
     height: 10rem;
     padding: 1rem;
     z-index: 100;
+    transition: all .3s;
 
     @include white-bold-text(8rem);
 
@@ -119,9 +124,8 @@
 
   &__text {
     margin-bottom: 1.5rem;
-    font-size: 4rem;
-    font-family: 'GenSenRoundedH', sans-serif;
-    color: $color-white;
+    @include white-bold-text(4rem);
+    transition: all .3s;
   }
 }
 
@@ -144,6 +148,7 @@ $content-main-item-height: 10.6rem;
   width: 105.4rem;
   height: calc(#{$content-main-item-height} * 3);
   font-size: 4rem;
+  transition: all .5s;
 
   &__item1 {
     display: flex;

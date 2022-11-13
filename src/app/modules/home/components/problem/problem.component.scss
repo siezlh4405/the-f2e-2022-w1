@@ -1,5 +1,6 @@
 @import '../../../../../assets/styles/variable';
 @import '../../../../../assets/styles/mixin';
+@import '../../../../../assets/styles/utilities';
 
 .problem {
   position: relative;
@@ -28,6 +29,7 @@
     font-family: 'GenSenRoundedH', sans-serif;
     font-size: 8rem;
     color: $color-green1;
+    transition: all .3s;
 
     &_1 {
       right: 17.1rem;
@@ -69,6 +71,7 @@
     height: 3.2rem;
     border-radius: 50%;
     background-color: $color-gray-light1;
+    transition: all .3s;
 
     &_online {
       background-color: $color-yellow1;
@@ -86,6 +89,7 @@
     display: flex;
     flex: 1;
     padding: 0 1rem 11.5rem 2rem;
+    transition: all .3s;
     // padding-bottom: 11.5rem;
   }
 }
