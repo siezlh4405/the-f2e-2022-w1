@@ -1,27 +1,37 @@
-# Thef2e2022week1
+# 作品說明
+
+The F2E Week1 - The F2E 活動網站設計
+
+## 系統說明
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
-## Development server
-
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+node 版本: 14.17.5
+Angular Cli版本: 12.2.1
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+運行方法: `npm install -g @angular/cli` & `npm install` & `ng serve`
 
-## Build
+## 資料夾說明
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- modules - 模組資料夾
+- home/components - Home 模組的元件資料夾
+- home/pages - Home 模組的Page元件資料夾 (會對應Router)
+- shared - 共用資料夾
+- shared/components - 共用元件資料夾, EX. header
+- assets - fonts & image & styles 資料夾
 
-## Running unit tests
+## 使用技術
+- Angular Cli
+- SCSS
+- RXJS
+- Flex
+- Grid
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 第三方服務
+- 字型 (https://github.com/ButTaiwan/gensen-font)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Note
+參考視覺為: https://www.figma.com/file/81vFu4cGuLEPrOU3HWYeA0/thef2e---Week-1?node-id=121%3A377
+由於時間問題，因此沒有完成　RWD 與 Loading 頁面, 僅完成 Web 頁面的切版與互動動畫
