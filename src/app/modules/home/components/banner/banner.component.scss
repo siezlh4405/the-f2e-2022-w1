@@ -20,6 +20,7 @@
     font-size: 4rem;
     font-family: 'GenSenRoundedH', sans-serif;
     transition: all .3s;
+    z-index: 100;
 
     &_big {
       font-size: 7rem;
@@ -37,6 +38,7 @@
   &__h1-box {
     position: relative;
     margin-bottom: 1.5rem;
+    z-index: 100;
   }
 
   &__h1-box:hover &__h1_absolute {
@@ -78,14 +80,18 @@
     &_web {
       position: absolute;
       top: 5rem;
-      right: 3rem;
+      right: 1.56%;
       z-index: 100;
     }
 
     &_front {
       position: absolute;
-      bottom: 24rem;
-      left: 12rem;
+      bottom: 18rem;
+      left: 6.25%;
+
+      @media only screen and (max-width: 98.75em) {
+        bottom: 12rem;
+      }
     }
   }
 
@@ -99,18 +105,22 @@
     &,
     &:link,
     &:visited {
-        display: flex;
-        position: relative;
-        display: flex;
-        align-items: center;
-        margin-top: 25rem;
-        padding: 1rem;
-        border: 2px solid transparent;
-        border-radius: 2px;
-        background-color: $color-white;
-        font-size: 2rem;
-        cursor: pointer;
-        transition: all .3s;
+      display: flex;
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-top: 25rem;
+      padding: 1rem;
+      border: 2px solid transparent;
+      border-radius: 2px;
+      background-color: $color-white;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: all .3s;
+
+      @media only screen and (max-width: 98.75em) {
+        margin-top: 28rem;
+      }
     }
 
     &::after {
@@ -165,18 +175,19 @@
     &_front {
       position: absolute;
       top: 26.6rem;
-      left: 10rem;
+      left: 5.2%;
     }
   }
 
   &__book {
     position: absolute;
     top: 32rem;
-    left: 40rem;
+    left: 20.83%;
     width: 35rem;
     height: 28.6rem;
-    background-repeat: no-repeat;
     background-image: url('../../../../../assets/images/house.png');
+    background-repeat: no-repeat;
+    background-size: contain;
     transition: all .3s;
 
     &:hover {
@@ -184,24 +195,50 @@
       height: 31.6rem;
       background-image: url('../../../../../assets/images/house-hover.png');
     }
+
+    @media only screen and (max-width: 98.75em) {
+      top: 40rem;
+      width: 25rem;
+      height: 20.6rem;
+
+      &:hover {
+        width: 25rem;
+        height: 20.6rem;
+        background-image: url('../../../../../assets/images/house-hover.png');
+      }
+    }
   }
 
   &__caterpillar {
     position: absolute;
     top: 40rem;
-    right: 38rem;
+    right: 15.62%;
     width: 27.5rem;
     height: 22.2rem;
-    background-repeat: no-repeat;
     background-image: url('../../../../../assets/images/fly.png');
+    background-repeat: no-repeat;
+    background-size: contain;
     transition: all .3s;
 
     &:hover {
       top: 35rem;
-      right: 30rem;
+      right: 15.63%;
       width: 42.5rem;
       height: 28.2rem;
       background-image: url('../../../../../assets/images/fly-hover.png');
+    }
+
+    @media only screen and (max-width: 98.75em) {
+      top: 44rem;
+      width: 23.5rem;
+      height: 18.2rem;
+
+      &:hover {
+        top: 40rem;
+        right: 15.63%;
+        width: 35.5rem;
+        height: 27.2rem;
+      }
     }
   }
 
