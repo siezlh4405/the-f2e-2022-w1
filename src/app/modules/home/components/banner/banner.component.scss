@@ -13,18 +13,31 @@
   overflow: hidden;
   z-index: 0;
 
+  @media only screen and (max-width:60em) {
+    padding: 6.5rem 1rem 0 1rem;
+  }
+
   &__h1 {
     color: $color-white;
     text-shadow: 1px 0 $color-gray-dark1, 1px 1px $color-gray-dark1, 1px -1px $color-gray-dark1,
       0 1px $color-gray-dark1, 0 -1px $color-gray-dark1, -1px 0 $color-gray-dark1, -1px 1px $color-gray-dark1;
     font-size: 4rem;
     font-family: 'GenSenRoundedH', sans-serif;
+    text-align: center;
     transition: all .3s;
     z-index: 100;
+
+    @media only screen and (max-width:60em) {
+      font-size: 2.8rem;
+    }
 
     &_big {
       font-size: 7rem;
       text-transform: uppercase;
+
+      @media only screen and (max-width:60em) {
+        font-size: 5rem;
+      }
     }
 
     &_absolute {
@@ -32,6 +45,17 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      @media only screen and (max-width: 60em) {
+        color: $color-orange3;
+        transform: translate(-48%, -56%);
+      }
+    }
+
+    &:first-child {
+      @media only screen and (max-width: 60em) {
+        color: $color-orange3;
+      }
     }
   }
 
@@ -56,19 +80,33 @@
     font-size: 3.2rem;
     transition: all .3s;
     letter-spacing: .5rem;
+    text-align: center;
     z-index: 80;
+
+    @media only screen and (max-width:60em) {
+      font-size: 2.4rem;
+      letter-spacing: .15em;
+    }
 
     &_light {
       padding: .5rem;
 
       &:hover {
         background-color: $color-white;
+
+        @media only screen and (max-width:60em) {
+          background-color: transparent;
+        }
       }
     }
 
     &_bold {
       font-size: 5.2rem;
       font-family: 'GenSenRoundedH', sans-serif;
+
+      @media only screen and (max-width:60em) {
+        font-size: 3.2rem;
+      }
     }
   }
 
@@ -76,6 +114,10 @@
     font-size: 5.2rem;
     color: $color-black;
     text-transform: uppercase;
+
+    @media only screen and (max-width: 60em) {
+      display: none;
+    }
 
     &_web {
       position: absolute;
@@ -99,6 +141,10 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+
+    @media only screen and (max-width: 60em) {
+      display: none;
+    }
   }
 
   &__ctn {
@@ -121,6 +167,11 @@
       @media only screen and (max-width: 98.75em) {
         margin-top: 28rem;
       }
+
+      @media only screen and (max-width: 60em) {
+        margin-top: 50rem;
+        border: 2px solid $color-black;
+      }
     }
 
     &::after {
@@ -136,6 +187,13 @@
       z-index: -1;
       background-color: $color-black;
       transition: all .3s;
+
+      @media only screen and (max-width: 60em) {
+        top: 75%;
+        left: 55%;
+        height: 110%;
+        transition: all .3s;
+      }
     }
 
     &:hover {
@@ -170,12 +228,25 @@
       top: 3rem;
       right: 21.6rem;
       transform: rotate(27deg);
+
+      @media only screen and (max-width:60em) {
+        right: -85px;
+        top: 27rem;
+        transform: rotate(7deg);
+      }
     }
 
     &_front {
       position: absolute;
       top: 26.6rem;
       left: 5.2%;
+
+
+      @media only screen and (max-width:60em) {
+        top: 64.6rem;
+        left: -10rem;
+        width: 22rem;
+      }
     }
   }
 
@@ -206,6 +277,17 @@
         height: 20.6rem;
         background-image: url('../../../../../assets/images/house-hover.png');
       }
+    }
+
+    @media only screen and (max-width:60em) {
+      top: 35rem;
+      left: 30.83%;
+      pointer-events: none;
+      background-image: url('../../../../../assets/images/house-hover.png');
+    }
+
+    @media only screen and (max-width:36em) {
+      left: 10%;
     }
   }
 
@@ -240,6 +322,19 @@
         height: 27.2rem;
       }
     }
+
+    @media only screen and (max-width:60em) {
+      top: 56rem;
+      right: 35.63%;
+      width: 25.5rem;
+      height: 23.2rem;
+      background-image: url('../../../../../assets/images/fly-hover.png');
+      pointer-events: none;
+    }
+
+    @media only screen and (max-width:36em) {
+      right: 10%;
+    }
   }
 
   &__rectangle {
@@ -247,6 +342,14 @@
     top: 35%;
     right: -17rem;
     width: 32rem;
+
+    @media only screen and (max-width:60em) {
+      width: 35rem;
+      right: -7rem;
+      top: unset;
+      bottom: -7.8rem;
+      z-index: -2;
+    }
   }
 
   &__oval {
@@ -255,11 +358,20 @@
     border-radius: 50%;
     border: 2px solid transparent;
 
+    @media only screen and (max-width:60em) {
+      width: 22rem;
+      height: 10.4rem;
+    }
+
     &_green {
       position: absolute;
       top: 21rem;
       background-color: $color-green3;
       z-index: 40;
+
+      @media only screen and (max-width:60em) {
+        top: 17rem;
+      }
     }
 
     &_line {
@@ -268,6 +380,10 @@
       background-color: transparent;
       border: 2px solid $color-black;
       z-index: 30;
+
+      @media only screen and (max-width:60em) {
+        top: 22rem;
+      }
     }
   }
 }

@@ -14,6 +14,10 @@
     font-size: 3.2rem;
     font-family: 'GenSenRoundedH', sans-serif;
     text-transform: uppercase;
+
+    @media only screen and (max-width:48em) {
+      font-size: 2.4rem;
+    }
   }
 }
 
@@ -29,6 +33,10 @@
     font-family: 'GenSenRoundedH', sans-serif;
     cursor: pointer;
     transition: all .3s;
+
+    @media only screen and (max-width:48em) {
+      display: none;
+    }
 
     &:hover {
       opacity: .8;
