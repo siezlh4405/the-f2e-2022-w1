@@ -71,6 +71,8 @@ export class ProblemComponent implements OnInit, AfterViewInit {
       if (this.scrollSubscript2 !== undefined) {
         this.scrollSubscript2.unsubscribe();
       }
+
+      this.activeNumber = 3;
     }
   }
 

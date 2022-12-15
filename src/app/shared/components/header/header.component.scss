@@ -52,5 +52,43 @@
         background-color: $color-white;
       }
     }
+
+    &_ham {
+      position: relative;
+      display: none;
+      width: 2.4rem;
+      height: .4rem;
+      padding: 0;
+      border-radius: 2rem;
+      background-color: $color-green1;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: .8rem;
+        left: 0;
+        width: 2.4rem;
+        height: .4rem;
+        padding: 0;
+        border-radius: 2rem;
+        background-color: $color-green1;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: .8rem;
+        left: 0;
+        width: 2.4rem;
+        height: .4rem;
+        padding: 0;
+        border-radius: 2rem;
+        background-color: $color-green1;
+      }
+
+      @media only screen and (max-width:48em) {
+        display: block;
+      }
+    }
   }
 }

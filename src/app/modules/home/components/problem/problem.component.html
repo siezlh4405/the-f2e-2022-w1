@@ -24,11 +24,21 @@
           <p class="problem-card__text">“動畫技能樹太雜無從下手？”</p>
         </div>
       </div>
+      <div class="problem-box__container problem-box__container_icn">
+        <div class="problem__box">
+          <p class="problem__text problem__text_1" [class.u-hidden]="activeNumber <= 1">？</p>
+          <p class="problem__text problem__text_2" [class.u-hidden]="activeNumber <= 2">？</p>
+          <p class="problem__text problem__text_3" [class.u-hidden]="activeNumber <= 0">？</p>
+          <img class="problem__logo" src="../../../../../assets/images/illu.png" alt="illu">
+        </div>
+      </div>
+      <div class="problem__box problem__box_abs">
+        <p class="problem__text problem__text_1" [class.u-hidden]="activeNumber <= 1">？</p>
+        <p class="problem__text problem__text_2" [class.u-hidden]="activeNumber <= 2">？</p>
+        <p class="problem__text problem__text_3" [class.u-hidden]="activeNumber <= 0">？</p>
+        <img class="problem__logo" src="../../../../../assets/images/illu.png" alt="illu">
+      </div>
     </div>
   </div>
-  <p class="problem__text problem__text_1" [class.u-hidden]="activeNumber <= 1">？</p>
-  <p class="problem__text problem__text_2" [class.u-hidden]="activeNumber <= 2">？</p>
-  <p class="problem__text problem__text_3" [class.u-hidden]="activeNumber <= 0">？</p>
-  <img class="problem__logo" src="../../../../../assets/images/illu.png" alt="illu">
   <div class="problem__footer"></div>
 </div>
