@@ -32,8 +32,8 @@
   top: 10.9rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 179rem;
-  height: 179rem;
+  width: 93vw;
+  height: 93vw;
   border-radius: 50%;
   background-color: $color-orange3;
   z-index: 200;
@@ -51,13 +51,30 @@
     letter-spacing: 1.5rem;
     color: $color-gray-dark2;
     transition: all .3s;
+
+    @media only screen and (max-width:95em) {
+      font-size: 4.8rem;
+    }
+
+    @media only screen and (max-width:62.25em) {
+      font-size: 2.4rem;
+    }
   }
 
   &__background {
     width: 91.1rem;
 
+    @media only screen and (max-width:95em) {
+      width: 65.1rem;
+    }
+
     &:nth-child(2) {
       margin-top: -5rem;
+
+      @media only screen and (max-width:95em) {
+        margin-top: -3rem;
+
+      }
     }
   }
 
@@ -146,9 +163,25 @@ $content-main-item-height: 10.6rem;
   row-gap: 3rem;
   column-gap: 2.8rem;
   width: 105.4rem;
+
   height: calc(#{$content-main-item-height} * 3);
   font-size: 4rem;
   transition: all .5s;
+
+  @media only screen and (max-width:95em) {
+    width: 70%;
+    grid-template-columns: 60% 1fr;
+    font-size: 2.4rem;
+  }
+
+  @media only screen and (max-width:80em) {
+    width: 90%;
+  }
+
+  @media only screen and (max-width:62.25em) {
+    font-size: 1.2rem;
+    height: calc(6.6rem * 3);
+  }
 
   &__item1 {
     display: flex;
@@ -176,7 +209,7 @@ $content-main-item-height: 10.6rem;
     justify-content: center;
     align-items: center;
     margin-right: 3.5rem;
-    letter-spacing: 0.35rem
+    letter-spacing: 0.35rem;
   }
 
   &__job-text {
@@ -190,6 +223,28 @@ $content-main-item-height: 10.6rem;
 
     &_big {
       font-size: 4.8rem;
+
+      @media only screen and (max-width:95em) {
+        font-size: 2.4rem;
+        width: fit-content !important;
+      }
+
+      @media only screen and (max-width:62.25em) {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media only screen and (max-width:95em) {
+      width: 20.5rem;
+    }
+
+    @media only screen and (max-width:62.25em) {
+      width: 12.5rem;
+
+      &:nth-child(2) {
+        margin-right: 4.7rem;
+        margin-left: 1.6rem;
+      }
     }
   }
 
@@ -204,31 +259,65 @@ $content-main-item-height: 10.6rem;
     height: 4.7rem;
     border-radius: 50%;
     background-color: $color-black;
+
+    @media only screen and (max-width:62.25em) {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
   }
 
   &__line {
     width: 25.9rem;
     height: 4px;
     background-color: $color-black;
+
+    @media only screen and (max-width:95em) {
+      width: 15.5rem;
+    }
+
+    @media only screen and (max-width:62.25em) {
+      height: 1px;
+    }
   }
 
   &__img1 {
     width: 19.1rem;
+
+    @media only screen and (max-width:95em) {
+      width: 14rem;
+    }
+
+    @media only screen and (max-width:62.25em) {
+      width: 10rem;
+    }
   }
 
   &__img2 {
     width: 9.4rem;
     margin-right: 3.6rem;
+
+    @media only screen and (max-width:62.25em) {
+      width: 7rem;
+    }
   }
 }
 
 .green-img {
   width: 29.7rem;
 
+  @media only screen and (max-width:95em) {
+    width: 18.7rem;
+  }
+
   &_main {
     position: absolute;
     top: 64rem;
     left: 17.6rem;
+
+    @media only screen and (max-width:95em) {
+      top: 64rem;
+      left: 17.6rem;
+    }
   }
 
   &_sub {

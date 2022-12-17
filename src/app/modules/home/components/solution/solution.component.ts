@@ -49,7 +49,8 @@ export class SolutionComponent implements OnInit, AfterViewInit {
   }
 
   checkPCScroll(): void {
-    if (window.innerWidth >= 1280) {
+    // if (window.innerWidth >= 1280) {
+    if (window.innerWidth >= 0) {
       if (this.scrollSubscript1 === undefined || this.scrollSubscript1.closed) {
         this.scrollSubscript1 = this.scroll$
           .subscribe(event => {
